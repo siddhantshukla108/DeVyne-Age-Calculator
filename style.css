@@ -1,89 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: #1f2a3b;
-}
-
-.container{
-    display: flex;
-}
-
-.container img{
-width: 10%;
-height: 10%;
-margin:4% 4% 0;
-border-radius: 70px;
-}
-
-.app{
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.app h1{
-    font-size: 25px;
-    color: rgb(35, 35, 156);
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
-}
-
-.quiz{
-    padding: 20px 0;
-}
-
-.quiz h2{
-    font-size: 18px;
-    font-weight: 600;
-    color:#770a0a
-}
-
-.btn{
-    background-color: #fff;
-    color: #222;
-    font-weight: 500;
+.container {
     width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn:hover:not([disabled]){
-    background: #4c6fa3;
-    color: #fff;
-}
-.btn:disabled{
-    cursor: no-drop;
-}
-#next-btn{
-    background: #444141;
+    min-height: 100vh;
     color: white;
-    width: 150px;
-    font-weight: 500;
-    border: 0;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
     padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.calculator h1 span {
+    color: rgb(107, 223, 107);
+}
+
+.input-box {
+    margin: 40px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 192, 192);
+}
+
+.input-box input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.input-box button {
+    background-color: #a2d4b7;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #491f1f;
     cursor: pointer;
-    display: none;
+    transition: background-color 0.3s;
 }
 
-.correct{
-    background: #9aeabc;
+.input-box button:hover {
+    background-color: #90cba8;
 }
 
-.incorrect{
-    background: #ff9393;
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fdfdfd;
 }
